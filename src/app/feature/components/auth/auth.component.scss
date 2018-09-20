@@ -1,0 +1,29 @@
+.home-section {
+  background: #2ada8c;
+  height: 400px;
+  display: flex;
+}
+
+.container-style {
+  border: 2px solid gray;
+  margin: 5% 10% auto 10%;
+  border-radius: 5px;
+}
+
+button {
+  background: red;
+  color: #fff;
+  font-weight: bold;
+  height: 50px;
+  align-self: center;
+  margin-left: 50px;
+}
+
+.register-form {
+    width: 100%;
+}
+
+input {
+    height: 40px;
+    
+}

@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="container-style">
+    <div class="home-section">
+      <div class="register-form">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div formGroupName="user">
+            <div class="text-center mt-10">
+              <input type="text" required placeholder="First Name" formControlName="firstName">
+              <div *ngIf="form.controls['firstName'].errors.required">
+                reqd
+              </div>
+            </div>
+            <div class="text-center mt-10">
+              <input type="text" required placeholder="Last Name" formControlName="lastName">
+              <div *ngIf="form.get(user.lastName).hasError(required)">
+                reqd
+              </div>
+            </div>
+            <div class="text-center mt-10">
+              <input type="number" required placeholder="Age" formControlName="age">
+              <div *ngIf="form.get(user.age).hasError(required)">
+                reqd
+              </div>
+            </div>
+          </div>
+          <div formGroupName="auth">
+            <div class="text-center mt-10">
+              <input type="text" required placeholder="Email" formControlName="email">
+              <div *ngIf="form.get(user.email).hasError(required)">
+                reqd</div>              
+              <div *ngIf="form.get(user.email).hasError(email)"></div>              
+            </div>
+            <div class="text-center mt-10">
+              <input type="password" required placeholder="Password" formControlName="password">
+              <div *ngIf="form.get(user.password).hasError(required)">
+                reqd</div>                            
+            </div>
+          </div>
+          <div class="text-center mt-10">
+            <button [disabled]="form.invalid">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

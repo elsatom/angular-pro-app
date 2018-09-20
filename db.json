@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "user": {
+        "firstName": "Elsa",
+        "lastName": "Tom",
+        "age": 21
+      },
+      "auth": {
+        "email": "cscscds",
+        "password": "testtesttesttest"
+      },
+      "id": 1
+    },
+    {
+      "id": 2,
+      "user": {
+        "firstName": "Neethu",
+        "lastName": "J",
+        "age": 23
+      },
+      "auth": {
+        "email": "neethu.j@perfomatix.com"
+      }
+    },
+    {
+      "id": 3,
+      "user": {
+        "firstName": "Justin",
+        "lastName": "Tom",
+        "age": 23
+      },
+      "auth": {
+        "email": "justin.tom@perfomatix.com"
+      }
+    },
+    {
+      "user": {
+        "firstName": "test",
+        "lastName": "test",
+        "age": 42
+      },
+      "auth": {
+        "email": "test",
+        "password": "test"
+      },
+      "id": 4
+    }
+  ]
+}

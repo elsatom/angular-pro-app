@@ -1,8 +1,26 @@
 .input-section {
-    border: 2px solid gray;
-    margin: 10% 10% auto 10%;
+  border: 2px solid gray;
+  margin: 10% 10% auto 10%;
+  border-radius: 5px;
 }
 
 .input-field {
-    background: #1B8958;
+  background: #2ada8c;
+  height: 400px;
+}
+
+input[type="text"] {
+  height: 40px;
+  width: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.input-div {
+  padding-top: 50px;
+  text-align: center;
 }

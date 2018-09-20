@@ -8,6 +8,9 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     InputMaskDirective
   ],
+  exports: [
+    InputMaskDirective
+  ],
   declarations: []
 })
 export class SharedModule { }

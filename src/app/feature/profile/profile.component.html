@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="container-style">
+    <div class="home-section">
+      <div class="register-form">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div formGroupName="user">
+            <div class="text-center mt-10">
+              <input type="text" required placeholder="First Name" formControlName="firstName" [disabled]="editMode === true" >
+            </div>
+            <div class="text-center mt-10">
+              <input type="text" required placeholder="Last Name" formControlName="lastName">
+            </div>
+            <div class="text-center mt-10">
+              <input type="number" required placeholder="Age" formControlName="age">
+            </div>
+          </div>
+          <div formGroupName="auth">
+            <div class="texdb.t-center mt-10">
+              <input type="text" required placeholder="Email" formControlName="email">
+            </div>
+            <div class="text-center mt-10">
+              <input type="password" required placeholder="Password" formControlName="password">
+            </div>
+          </div>
+          <div class="text-center mt-10">
+            <button [disabled]="form.invalid">Update</button>
+            <!--<button *ngIf="!editMode" [disabled]="form.invalid" (click)="editModeOn()">Edit Mode</button>-->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
